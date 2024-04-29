@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Bookmark</title>
+</head>
+
+<body>
+
+    <div class="overlay  position-fixed start-0 top-0 end-0 bottom-0 d-none justify-content-center align-items-center">
+        <div class="child container p-4 rounded-3 pb-2">
+        
+            <div class="d-flex justify-content-between pb-4 ">
+                <div class="circuls d-flex ">
+                    <span class="rounded-circle me-2"></span>
+                    <span class="rounded-circle me-2"></span>
+                    <span class="rounded-circle me-2"></span>
+                </div>
+                <span><i class="fa-solid fa-xmark esc fs-3  "></i></span>
+            </div>
+            <p class="m-0 pb-4 ">
+                Site Name or Url is not valid, Please follow the <br>
+                rules below :
+            </p>
+            <ol class="ps-2">
+                <li class="d-flex ">
+                    <i class="fa-regular fa-circle-right me-2 ms-0 pt-2"></i>
+                    <p>Site name must contain at least 3 characters</p>
+               </li>
+                <li class="d-flex ">
+                    <i class="fa-regular fa-circle-right me-2 ms-0 pt-1"></i>
+                    <p>Site URL must be a valid one</p>
+               </li>
+            </ol>
+        </div>
+    </div>
+    <div class="container">
+        <h1 class="text-center my-5 ">Bookmarker</h1>
+        <div class="my-3"></div>
+        <div class="fav-site mt-5  ">
+            <div class="form-title d-flex justify-content-center align-items-center mt-4">
+                <span class="icon1"> <i class="fa-solid fa-bookmark fs-4"></i> </span>
+                <h2 class="mx-2">Bookmark your favorite sites </h2>
+                <span class="icon2"> <i class="fa-solid fa-bookmark fs-4"></i> </span>
+            </div>
+            <span><i class="fa-solid fa-book-bookmark me-2"></i></span>
+            <label for="name" class="mt-4 mb-2 fw-bold"> Site Name</label>
+            <input type="text" id="name" placeholder="Bookmark Name" class="form-control">
+
+            <span><i class="fa-solid fa-link me-1"></i></span>
+            <label for="url" class="mt-4 mb-2 fw-bold">Site URL</label>
+            <input type="text" id="url" placeholder="Website URL" class="form-control">
+            <div class="text-center">
+                <button type="button" class="btn btn-submit px-5 my-4 text-center sbtn" >submit</button>
+            </div>
+        </div>
+        <table class="table mt-4 bg-light text-center">
+            <thead>
+                <th class="text-center">Index</th>
+                <th class="text-center">Website Name</th>
+                <th class="text-center">Visit</th>
+                <th class="text-center">Delete</th>
+            </thead>
+            <tbody id="tablebody" >
+              
+            </tbody>
+        </table>
+
+    </div>
+
+  
+
+
+    <link rel="stylesheet" href="js/bootstrap.bundle.min.js">
+    <script src="js/index.js"></script>
+</body>
+
+</html>
